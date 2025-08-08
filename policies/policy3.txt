@@ -1,0 +1,5 @@
+Sample Insurance Policy - Policy 3
+This is a simple travel insurance policy covering domestic trips.
+Coverage Amount: INR 3,00,000
+Premium: INR 5,000 per annum
+Conditions: Coverage excludes extreme sports and adventure activities.
