@@ -1,5 +1,10 @@
 # Deployment Guide for Policy Query System
 
+## 🎯 HackRx Webhook Submission
+
+**Your webhook endpoint**: `/api/v1/hackrx/run` (POST)
+**Health check endpoint**: `/api/v1/hackrx/health` (GET)
+
 ## 🚀 Quick Start - Local Testing
 
 Your web application is ready! To test locally:
@@ -85,6 +90,21 @@ If deployment fails:
 3. Check deployment logs on your platform
 4. Ensure Python version matches runtime.txt
 
+## 🧪 Test Your Webhook
+
+After deployment, test your webhook:
+
+```bash
+python test_webhook.py https://your-app-name.railway.app
+```
+
+## 🎯 Submit to HackRx
+
+Your webhook URL for submission:
+```
+https://your-app-name.railway.app/api/v1/hackrx/run
+```
+
 ## 🎉 Success!
 
-Once deployed, your policy query system will be available at your app's URL. Users can ask questions about your policy documents through a beautiful web interface!
+Once deployed, your policy query system will be available at your app's URL. Users can ask questions about your policy documents through a beautiful web interface, and the HackRx platform can test your solution via the webhook endpoint!
